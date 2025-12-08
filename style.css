@@ -1,0 +1,300 @@
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0px;
+}
+    .left_grid {
+        display: grid;
+        grid-column: span 2;
+        height: 100vh;
+        grid-template-rows: repeat(11, 1fr);
+        gap: 10px;
+        overflow: hidden;
+    }
+        .left_grid_box{
+            padding: 5px 0px 0px 15px;
+            justify-content: center;
+            grid-row: span 1;
+        }
+            .instagram_logo{
+                display: none;
+            }
+            .left_grid div img {
+            height: 25px;
+            float: left;
+            }
+            .left_grid_box:hover{
+                transform: scale(1.05);
+            }
+            .icon_name{
+                padding: 5px 0px 0px 35px;
+            }
+            #Profile_image img{
+                height: 30px;
+            }
+
+            #div_instagram{
+                font-size: 2rem;
+                text-align: center;
+                padding: 30px 0px 35px 0px;
+            }
+            #div_more{
+                grid-row: span 2;
+                padding-top: 50px;
+                font-size: 1.1rem;
+            }
+
+
+
+
+
+
+    .right_grid {
+        grid-column: span 10;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        overflow: auto;
+    }
+
+        .left_grid_in {
+            margin: 5px;
+            grid-column: span 8; 
+        }
+            .div_info{
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                margin: 0% 15%;
+                height: 45px;
+            }
+                .div_info_profile{
+                    grid-column: span 1;
+                    text-align: left;
+                }
+                    .div_info_profile img{
+                        height: 40px;
+                    }
+                .div_info_text{
+                    grid-column: span 9;
+                    float: left;
+                }
+                .p1 {
+                    margin: 2px 0px 0px 0px;
+                    font-size: 1.05rem;
+                }
+                .p2 {
+                    margin: 0px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+                .div_info_more{
+                    grid-column: span 2;
+                    font-size: 2rem;
+                    text-align: left;
+                }
+
+            .div_video{
+                text-align: center;
+                min-height: 300px;
+                background-color: rgb(243, 243, 243);
+                width: 65%;
+                margin: 0% 15% 1% 15%;
+            }
+                .div_video img{
+                    width: 100%;
+                    border-radius: 6px;   
+                }
+
+            .div_suggestion{
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                margin: 0% 19% 0% 15%;
+            }
+                .div_suggestion_left{
+                    grid-column: span 9;
+                }
+                    .div_suggestion_left img{
+                        height: 20px;  
+                        padding: 5px 8px;
+                    }
+                .div_suggestion_right{
+                    grid-column: span 1;
+                }
+                    .div_suggestion_right img{
+                        height: 20px;  
+                    }
+
+            .num_likes{
+                padding: 0% 0% 0% 20%;
+                font-weight: bold;
+                font-size: 0.9rem;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .div_comment{
+                margin: 0% 15%;
+            }
+                .div_comment_title{
+                    height: 40px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                    .div_comment_title a{
+                        color: blue;
+
+                    }
+                .div_comment_translation{
+                    height: 20px;
+                    font-size: 0.72rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: rgba(0, 0, 0, 0.9);
+                }
+                .div_comment_add{
+                    height: 20px;
+                    color: rgba(0, 0, 0, 0.5);
+                    display: grid;
+                    grid-template-columns: repeat(10, 1fr);
+                }
+                #div_comment_add1 {
+                    height: 20px;
+                    grid-column: span 9;
+                }
+                #div_comment_add2 {
+                    height: 20px;
+                    grid-column: span 1;
+                }
+                    #div_comment_add2 img{
+                        height: 15px;
+                    }
+
+
+        .right_grid_in {
+            margin: 40px 4px 0px 4px;
+            grid-column: span 4;
+        }
+            .div_right_head{
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+                .div_right_head_left{
+                    grid-column: span 9;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    color: rgba(0, 0, 0, 0.85);
+                }
+                .div_right_head_right{
+                    grid-column:  span 3;
+                    font-size: 0.8rem;
+                }
+
+            .div_right_info{
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                margin-top: 5px;
+            }
+                .div_right_info_profile{
+                    grid-column: span 2;
+                }
+                    .div_right_info_profile img{
+                        height: 55px;
+                    }
+                .div_right_info_name{
+                    grid-column: span 7;
+                    padding: 10px 0px 0px 12px;
+                }
+                    .p1_text{
+                        margin: 0px;
+                        font-weight: bold;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    .p2_text{
+                        margin: 0px;
+                        color: rgba(0, 0, 0, 0.5);
+                        font-size: 0.8rem;
+                    }
+                .div_right_info_follow{
+                    grid-column: span 3;
+                    padding-top: 15px;
+                }
+                    .div_right_info_follow a{
+                        color: blue;
+                        font-size: 0.7rem;
+                        text-decoration: none;
+                    }
+                        .div_right_info_follow a:hover{
+                            color: rgb(254, 79, 79);
+                            font-size: 0.73rem;
+                        }
+@media (max-width: 1150px) {
+    .right_grid_in{
+        display: none;
+    }
+    .left_grid_in{
+        grid-column: span 12;
+    }
+}
+@media (max-width: 750px){
+    .left_grid{
+        grid-column: span 1;
+    }
+    .right_grid{
+        grid-column: span 11;
+    }
+    .icon_name{
+        display: none;
+    }
+    #div_instagram{
+        display: none;
+    }
+    .instagram_logo{
+        display: block;
+        height: 30px;
+        margin: 20px 0px 20px 10px;
+    }
+}
+@media (max-width: 600px) {
+    .left_grid{
+        /* display: none; */
+        position: fixed;
+        height: 45px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid rgba(0, 0, 0, 0.156);
+        bottom: 0;
+        grid-column: span 12;
+    }
+    .left_grid_in{
+        padding-bottom: 40px;
+    }
+    .instagram_logo{
+        display: none;
+    }
+    .right_grid{
+        grid-column: span 12;
+    }
+    .div_info{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .div_video{
+        width: 100%;
+        margin: 0px;
+    }
+    .div_suggestion{
+        margin: 0px;
+    }
+    .num_likes{
+        padding-left: 10px;
+    }
+    .div_comment{
+        margin: 10px;
+    }
+}
+
+
+
