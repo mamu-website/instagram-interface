@@ -5,7 +5,7 @@ body{
     gap: 5px;
     overflow: hidden;
     height: 100vh;
-    margin: 0px;
+    margin: 1px;
 }
     .left_grid {
         display: grid;
