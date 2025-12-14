@@ -272,7 +272,7 @@ body{
         grid-column: span 12;
         border: 1px solid red;
         padding-left: 10px;
-        gap: 40px;
+        /* gap: 40px; */
     }
 
     #mobaileDel {
