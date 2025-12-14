@@ -5,7 +5,7 @@ body{
     gap: 5px;
     overflow: hidden;
     height: 100vh;
-    margin: 1px;
+    margin: 0px;
 }
     .left_grid {
         display: grid;
@@ -20,6 +20,10 @@ body{
             justify-content: center;
             grid-row: span 1;
         }
+
+            .addMobaile {
+                display: none;
+            }
             .instagram_logo{
                 display: none;
             }
@@ -256,7 +260,6 @@ body{
 }
 @media (max-width: 600px) {
     .left_grid{
-        /* display: none; */
         position: fixed;
         height: 45px;
         width: 100%;
@@ -267,6 +270,17 @@ body{
         border-top: 2px solid rgba(0, 0, 0, 0.156);
         bottom: 0;
         grid-column: span 12;
+        border: 1px solid red;
+        padding-left: 10px;
+        gap: 40px;
+    }
+
+    #mobaileDel {
+        display: none;
+    }
+
+    .addMobaile {
+        display: block;
     }
     .left_grid_in{
         padding-bottom: 40px;
