@@ -259,20 +259,49 @@ body{
     }
 }
 @media (max-width: 600px) {
-    .left_grid{
+
+    .left_grid {
         position: fixed;
-        height: 45px;
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-top: 2px solid rgba(0, 0, 0, 0.156);
         bottom: 0;
-        grid-column: span 12;
-        border: 1px solid red;
-        padding-left: 10px;
-        /* gap: 40px; */
+        left: 0;
+        width: 100%;
+        height: 55px;
+        background-color: #fff;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        border-top: 1px solid rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+    }
+
+    .left_grid_box {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: none !important;
+    }
+
+    .left_grid_box:hover {
+        transform: none;
+    }
+
+    .left_grid img {
+        height: 24px;
+        float: none;
+    }
+
+    .icon_name {
+        display: none;
+    }
+
+    #div_instagram,
+    .instagram_logo,
+    #div_more {
+        display: none;
     }
 
     #mobaileDel {
@@ -282,33 +311,37 @@ body{
     .addMobaile {
         display: block;
     }
-    .left_grid_in{
-        padding-bottom: 40px;
-    }
-    .instagram_logo{
-        display: none;
-    }
-    .right_grid{
+
+    .right_grid {
         grid-column: span 12;
     }
-    .div_info{
-        margin-left: 0px;
-        margin-right: 0px;
+
+    .left_grid_in {
+        padding-bottom: 65px;
     }
-    .div_video{
+
+    .div_info {
+        margin: 0;
+    }
+
+    .div_video {
         width: 100%;
-        margin: 0px;
+        margin: 0;
     }
-    .div_suggestion{
-        margin: 0px;
+
+    .div_suggestion {
+        margin: 0;
     }
-    .num_likes{
+
+    .num_likes {
         padding-left: 10px;
     }
-    .div_comment{
+
+    .div_comment {
         margin: 10px;
     }
 }
+
 
 
 
